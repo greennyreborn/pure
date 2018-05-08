@@ -481,6 +481,9 @@ prompt_pure_setup() {
 
 	# prompt turns red if the previous command didn't exit with 0
 	PROMPT+='%(?.%F{magenta}.%F{red})${PURE_PROMPT_SYMBOL:-❯}%f '
+
+	# time, added by michael
+    RPROMPT='%F{blue}[%F{green}%D{%H:%M:%S}%F{blue}]%f'
 }
 
 prompt_pure_setup "$@"
